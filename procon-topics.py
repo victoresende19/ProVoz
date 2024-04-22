@@ -18,10 +18,10 @@ def nlp_download():
 
 nlp_download()
 
-st.set_page_config(layout="wide", page_icon='🚨', page_title='Tópicos ProVoz')
+st.set_page_config(layout="wide", page_icon='🚨', page_title='ProVoz')
 st.markdown(style(), unsafe_allow_html=True)
 
-st.markdown("<h1 style='text-align: left; font-size:52px; color: white'>PROCON</h1>",unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: left; font-size:52px; color: white'>ProVoz</h1>",unsafe_allow_html=True)
 st.markdown("<p style='text-align: left; font-size:16px'>Quando os consumidores brasileiros precisam reclamar de empresas, o primeiro passo é ir ao Procon e registrar uma reclamação. Explore o perfil do consumidor e o tópico mais reclamado por UF e faixa etária na plataforma ProVoz! A base de dados utilizada refere-se ao ano de 2016 e pode ser encontrada <a href='https://dados.mj.gov.br/dataset/cadastro-nacional-de-reclamacoes-fundamentadas-procons-sindec'>clicando aqui (Ministério da justiça - Sindec) </a>.<br>", unsafe_allow_html=True)
 eda, topics = st.tabs(["Perfil do consumidor", "Tópicos com mais reclamações"])
 
