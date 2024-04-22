@@ -10,11 +10,6 @@ import streamlit as st
 
 @st.cache_data(show_spinner=False, ttl=24*3600, max_entries=5)
 def downloads_nlp():
-    import nltk
-    download('wordnet')
-    download('punkt')
-    download('stopwords')
-
     spacy.cli.download("pt_core_news_sm")
     nlp = spacy.load('pt_core_news_sm')
 
