@@ -58,6 +58,8 @@ with eda:
 
 
 with topics:
+    st.markdown("<p style='text-align: left; font-size:16px'>E quais são os tópicos mais reclamados por UF e faixa etária? Utilize o filtro abaixo! Visando encontrar tópicos consistentes, o algoritmo utiliza apenas reclamações com quatro ou mais palavras.<br>", unsafe_allow_html=True)
+
     with st.form(key='procon'):
         with st.expander("Faça filtros para encontrar os tópicos com mais reclamações", expanded=True):
             col1, col2, col3 = st.columns(3)
