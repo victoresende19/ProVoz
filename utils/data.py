@@ -23,5 +23,12 @@ def data(type):
                     return data
     
     if type == 'csv':
-        data = pd.read_csv('http://dados.mj.gov.br/dataset/8ff7032a-d6db-452b-89f1-d860eb6965ff/resource/bc23b54c-18e7-4ed8-b7f5-205434ac5719/download/crf2022dados-abertos.csv') 
-        return data
+        url = 'http://dados.mj.gov.br/dataset/8ff7032a-d6db-452b-89f1-d860eb6965ff/resource/bc23b54c-18e7-4ed8-b7f5-205434ac5719/download/crf2022dados-abertos.csv'
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'
+        }
+        response = requests.get(url, headers=headers)
+        
+        if response.status_code == 200:
+            data = pd.read_csv(StringIO(response.text), delimiter=';')
+            return data
