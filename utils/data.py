@@ -20,5 +20,6 @@ def data(type):
             with ZipFile(zip_content) as z:
                 with z.open('reclamacoes-fundamentadas-sindec-2016_v2.csv') as f:
                     return pd.read_csv(f, delimiter=';')
-    else:
+    
+    if type == 'csv':
         return pd.read_csv('http://dados.mj.gov.br/dataset/8ff7032a-d6db-452b-89f1-d860eb6965ff/resource/bc23b54c-18e7-4ed8-b7f5-205434ac5719/download/crf2022dados-abertos.csv') 
