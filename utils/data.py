@@ -30,5 +30,5 @@ def data(type):
         response = requests.get(url, headers=headers)
         
         if response.status_code == 200:
-            data = pd.read_csv(StringIO(response.text))
+            data = pd.read_csv(StringIO(response.text), sep=';', on_bad_lines='skip')
             return data
