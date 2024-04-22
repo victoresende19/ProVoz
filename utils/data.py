@@ -1,5 +1,5 @@
 import pandas as pd
-from io import BytesIO
+from io import BytesIO, StringIO
 from zipfile import ZipFile
 import requests
 import streamlit as st
@@ -30,5 +30,5 @@ def data(type):
         response = requests.get(url, headers=headers)
         
         if response.status_code == 200:
-            data = pd.read_csv(StringIO(response.text), delimiter=';')
+            data = pd.read_csv(BytesIO(response.text), delimiter=';')
             return data
