@@ -13,7 +13,6 @@ from utils.plots import pie_plot, bar_hue_plot, bar_plot
 nltk.download('wordnet')
 nltk.download('punkt')
 nltk.download('stopwords')
-spacy.cli.download("pt_core_news_sm")
 
 st.set_page_config(layout="wide", page_icon='🚨', page_title='Tópicos ProVoz')
 st.markdown(style(), unsafe_allow_html=True)
