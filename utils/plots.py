@@ -21,7 +21,7 @@ def pie_plot(df: pd.DataFrame, coluna: str, titulo = str):
     fig = px.pie(data, names=coluna, values='count', color_discrete_sequence=['#778da9','#555b6e', '#577590', '#8e9aaf', '#d3d3d3'],
                 hole=0.3, labels={coluna: coluna}, title=titulo)
 
-    fig.update_traces(textfont_color='black', textinfo='percent+label', textfont_size=14)
+    fig.update_traces(textfont_color='white', textinfo='percent+label', textfont_size=14)
     fig.update_layout(
         showlegend=False,
         title=dict(text=titulo, x=0.5, xanchor='center', font=dict(size=22, color='white')),
