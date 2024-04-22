@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import streamlit as st
 import plotly.express as px
+import nltk
 from utils.data import data
 from utils.preprocessing import pre_processing_topics
 from utils.topic import normalize, lemanization, tfidf_processing
