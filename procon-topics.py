@@ -58,8 +58,6 @@ with eda:
 
 
 with topics:
-    st.markdown("<p style='text-align: left; font-size:16px'>E quais são os tópicos mais reclamados por UF e faixa etária? Utilize o filtro abaixo! Visando encontrar tópicos consistentes, o algoritmo utiliza apenas reclamações com quatro ou mais palavras.<br>", unsafe_allow_html=True)
-
     with st.form(key='procon'):
         with st.expander("Faça filtros para encontrar os tópicos com mais reclamações", expanded=True):
             col1, col2, col3 = st.columns(3)
@@ -73,6 +71,7 @@ with topics:
                 valuesGram = ['Uma', 'Duas']
                 optionGram = st.selectbox(label='Quantidade palavras', options=valuesGram,  index=None, placeholder='Escolha uma opção')
 
+        st.markdown("<p style='text-align: left; font-size:16px'>Visando encontrar tópicos consistentes, o algoritmo utiliza apenas reclamações com quatro ou mais palavras.<br>", unsafe_allow_html=True)
         submit_button = st.form_submit_button(label='Encontrar tópicos mais reclamados 💥')
 
         if submit_button:
