@@ -3,6 +3,7 @@ import numpy as np
 import streamlit as st
 import plotly.express as px
 import nltk
+import spacy.cli
 from utils.data import data
 from utils.preprocessing import pre_processing_topics
 from utils.topic import normalize, lemanization, tfidf_processing
@@ -12,6 +13,7 @@ from utils.plots import pie_plot, bar_hue_plot, bar_plot
 nltk.download('wordnet')
 nltk.download('punkt')
 nltk.download('stopwords')
+spacy.cli.download("pt_core_news_sm")
 
 st.set_page_config(layout="wide", page_icon='🚨', page_title='Tópicos ProVoz')
 st.markdown(style(), unsafe_allow_html=True)
