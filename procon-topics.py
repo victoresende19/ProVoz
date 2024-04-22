@@ -71,7 +71,7 @@ with topics:
                 valuesGram = ['Uma', 'Duas']
                 optionGram = st.selectbox(label='Quantidade palavras', options=valuesGram,  index=None, placeholder='Escolha uma opção')
 
-        st.markdown("<p style='text-align: left; font-size:8px'>Obs.: visando encontrar tópicos consistentes, o algoritmo utiliza apenas reclamações com quatro ou mais palavras.<br>", unsafe_allow_html=True)
+        st.markdown("<span style='text-align: left; font-size:8px'>Obs.: visando encontrar tópicos consistentes, o algoritmo utiliza apenas reclamações com quatro ou mais palavras.<br>", unsafe_allow_html=True)
         submit_button = st.form_submit_button(label='Encontrar tópicos mais reclamados 💥')
 
         if submit_button:
