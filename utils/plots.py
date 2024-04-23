@@ -73,7 +73,7 @@ def bar_hue_plot(df: pd.DataFrame, x_axis: str, y_axis: str, cor: str, titulo: s
         legend=dict(
             orientation="h",
             yanchor="bottom",
-            y=-0.8
+            y=-0.8,
             xanchor="center",
             x=0.5,
             font=dict(size=18, color='white'),
