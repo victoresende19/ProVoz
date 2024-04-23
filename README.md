@@ -1,6 +1,8 @@
 ## ProVoz
 
-![Alt text](https://www.procon.sp.gov.br/wp-content/uploads/2024/04/fisc_nao_se_cale.jpeg)
+<div align="center">
+  <img src="https://www.procon.sp.gov.br/wp-content/uploads/2024/04/fisc_nao_se_cale.jpeg" />
+</div>
 
 <hr>
 
