@@ -73,10 +73,10 @@ def bar_hue_plot(df: pd.DataFrame, x_axis: str, y_axis: str, cor: str, titulo: s
         legend=dict(
             orientation="h",
             yanchor="bottom",
-            y=-0.4,
+            y=-0.8
             xanchor="center",
             x=0.5,
-            font=dict(size=22, color='white'),
+            font=dict(size=18, color='white'),
         ),
         title=dict(text=titulo, x=0.5, xanchor='center', font=dict(size=22, color='white')),
         paper_bgcolor='rgba(0, 0, 0, 0)',
