@@ -84,8 +84,8 @@ def bar_hue_plot(df: pd.DataFrame, x_axis: str, y_axis: str, cor: str, titulo: s
         width=largura,
         height=600,
         xaxis=dict(
-            title=dict(text='', font=dict(size=22, color='white')),  
-            tickfont=dict(size=22, color='white') 
+            title=dict(text='', font=dict(size=18, color='white')),  
+            tickfont=dict(size=18, color='white') 
         )
     )
 
